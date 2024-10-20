@@ -5,6 +5,7 @@ import { Header } from './components/header/header';
 const App = () => {
   return (
     <section>
+      
     <Header />
     <div className='flex flex-row justify-center items-center flex-wrap gap-10'>
       <RecipeItem recipe={{
