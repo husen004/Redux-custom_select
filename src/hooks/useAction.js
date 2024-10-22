@@ -8,7 +8,6 @@ const rootActions = {
 }   
 
 export const useAction = () => {
-  
     const dispatch = useDispatch()
 
   return useMemo(() => bindActionCreators(rootActions, dispatch), [dispatch])
