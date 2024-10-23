@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { getUserById } from "./user.actions";
 
 
-export const useSlice = createSlice({
+export const userSlice = createSlice({
     name:'users',
     initialState: [],
     reducers: {
