@@ -4,6 +4,7 @@ import { Header } from './components/header/header';
 
 const App = () => {
   return (
+    
     <section>
       
     <Header />
@@ -25,6 +26,7 @@ const App = () => {
     </div>
 
     </section>
+    
   )
 }
 
