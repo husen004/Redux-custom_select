@@ -5,6 +5,7 @@ import { User } from './components/user/user';
 
 const App = () => {
   return (
+    
     <section>
       
     <Header />
@@ -27,6 +28,7 @@ const App = () => {
     </div>
 
     </section>
+    
   )
 }
 
