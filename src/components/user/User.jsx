@@ -10,6 +10,7 @@ export const User = () => {
 
   return (
     <div>
+        <button onClick={() => getUserById(1)}>Get User</button>
         {isLoading ? <div>Loading...</div> : error ? <div>{error.message}</div> : user?.name ? <div>User : {user.name}</div> : <h1>USER NOT FOUND</h1>}
         <h1></h1>
     </div>
