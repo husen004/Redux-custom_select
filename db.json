@@ -1,0 +1,25 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "name": "pasta",
+            "image": "https://i.imgur.com/IXDJ52k.png"
+        },
+        {
+            "id": 2,
+            "name": "pizza",
+            "image": "https://i.imgur.com/8B8YLOo.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Caesar",
+            "image": "https://i.imgur.com/QWXH2NC.png"
+        },
+        {
+            "id": 4,
+            "name": "Wedges",
+            "image": "https://i.imgur.com/sxP6sJt.png"
+        }
+        
+    ]
+}
