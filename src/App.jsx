@@ -9,7 +9,7 @@ const App = () => {
     <section>
       
     <Header />
-    <User />
+    {/* <User /> */}
     <div className='flex flex-row justify-center items-center flex-wrap gap-10'>
       <RecipeItem recipe={{
         id: 1,
