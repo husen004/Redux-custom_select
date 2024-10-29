@@ -8,21 +8,6 @@ export const api = createApi({
     baseQuery: fetchBaseQuery({
         baseUrl: API_URL,
     }),
-    endpoints: builder => ({
-        getRecipe: builder.query({
-            query: () => '/',
-        }),
-        createRecipe: builder.mutation({
-            query: (recipe) => ({
-                body: (recipe) => ({
-                    body: recipe,
-                    url: '/',
-                    method: 'POST',
-                })
-            }),
-        }),
-    }),
-    
 })
   
 
