@@ -1,6 +1,7 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { reducer as favoritesReducer } from "./favorites/favorites.slice";
 import { userSlice } from "./user/use.slice";
+import { api } from "./api/api";
 
 const reducers = combineReducers({
     favorites: favoritesReducer,

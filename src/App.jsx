@@ -4,6 +4,10 @@ import { Header } from './components/header/header';
 import { User } from './components/user/user';
 
 const App = () => {
+
+  const [isLoading, data] = useGetRecipesQuery();
+  console.log(data)
+  
   return (
     
     <section>
