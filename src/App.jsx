@@ -2,37 +2,31 @@ import React from 'react'
 import RecipeItem from './components/recipe-item/RecipeItem'
 import { Header } from './components/header/header';
 import { User } from './components/user/user';
+import { useGetRecipesQuery } from './store/api/api';
 
-const App = () => {
+function App() {
 
   const [isLoading, data] = useGetRecipesQuery();
   console.log(data)
   
   return (
-    
+    <>
+
     <section>
       
     <Header />
-    {/* <User /> */}
-    <div className='flex flex-row justify-center items-center flex-wrap gap-10'>
-      <RecipeItem recipe={{
-        id: 1,
-        name: 'lasangya',
-      }} />
-
-      <RecipeItem recipe={{
-        id: 2,
-        name: 'Pizza',
-      }} />
-
-      <RecipeItem recipe={{
-        id: 3,
-        name: 'Pasta',
-      }} />
-    </div>
-
+    <User />
+    {/* <div>
+      {isLoading ? <div>Loading . . . </div> : data ? data.map(recipe => 
+      <RecipeItem
+      key={recipe.id}
+      recipe={recipe}
+      />
+      ) : <div>Did Not Found</div>}
+    </div> */}
     </section>
     
+        </>
   )
 }
 

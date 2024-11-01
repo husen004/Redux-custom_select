@@ -14,5 +14,7 @@ export const api = createApi({
         }),
     }),
 })
+
+export const { useGetRecipes } = api
   
 
