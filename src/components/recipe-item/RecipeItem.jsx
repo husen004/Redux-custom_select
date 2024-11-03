@@ -9,8 +9,6 @@ function RecipeItem({recipe}) {
 
   console.log(favorites);
 
-  //condition exist Проверяет объект в избраном или нет
-
   const isExist = favorites.some(r => r.id === recipe.id)
   
   return (  

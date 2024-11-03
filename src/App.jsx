@@ -18,9 +18,14 @@ function App() {
 
     <section>
 
-    <Header />
-    <User />
-    <div>
+    <div className='flex justify-between'>
+
+      <User />
+      <Header />
+
+    </div>
+
+    <div className='flex justify-center items-center gap-6'>
       {isLoading ? <div>Loading . . . </div> : data ? data.map(recipe =>
       <RecipeItem
       key={recipe.id}
@@ -28,6 +33,7 @@ function App() {
       />
       ) : <div>Did Not Found</div>}
     </div>
+
     </section>
 
         </>
