@@ -1,24 +1,24 @@
 {
-    "recipes": [
-        {
-            "id": 0,
-            "name": "pasta",
-            "image": "https://i.imgur.com/IXDJ52k.png"
-        },
-        {
-            "id": 1,
-            "name": "pizza",
-            "image": "https://i.imgur.com/8B8YLOo.jpg"
-        },
-        {
-            "id": 2,
-            "name": "Caesar",
-            "image": "https://i.imgur.com/QWXH2NC.png"
-        },
-        {
-            "id": 3,
-            "name": "Wedges",
-            "image": "https://i.imgur.com/sxP6sJt.png"
-        }
-    ]
+  "recipes": [
+    {
+      "id": "0",
+      "name": "pasta",
+      "image": "https://i.imgur.com/IXDJ52k.png"
+    },
+    {
+      "id": "1",
+      "name": "pizza",
+      "image": "https://i.imgur.com/8B8YLOo.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Caesar",
+      "image": "https://i.imgur.com/QWXH2NC.png"
+    },
+    {
+      "id": "3",
+      "name": "Wedges",
+      "image": "https://i.imgur.com/sxP6sJt.png"
+    }
+  ]
 }
