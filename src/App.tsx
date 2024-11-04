@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import RecipeItem from './components/recipe-item/RecipeItem'
 import { useGetRecipesQuery } from './store/api/api';
 import CreateRecipe from './components/create-recipe/CreateRecipe';
@@ -10,7 +10,15 @@ import { Header } from './components/header/Header';
 
 function App() {
 
-  const {isLoading, data} = useGetRecipesQuery(null);
+  const [ searchTerm, setSearchTerm ] = useState<string>('')
+
+  const [queryTerm, setQueryTerm] = useState('')
+  
+  const {isLoading, data} = useGetRecipesQuery(queryTerm);
+
+  const handleSearch = () => {
+    setQueryTerm(searchTerm);
+  }
 
   return (
     <>
@@ -23,6 +31,12 @@ function App() {
       <CreateRecipe />
       <Header />
 
+    </div>
+
+    <div className='p-4 flex flex-row items-center mx-2'>
+       <p className='text-2xl'>Find Your Favorite dish:</p>
+       <input type='search' value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder='Type Search Recipe' className='input ml-4'/>
+       <button onClick={handleSearch} className='border-2 rounded-xl bg-green-300 border-green-400 text-lg ml-2 w-[100px] h-[46px]'>Search</button>
     </div>
 
     <div className='flex flex-wrap justify-center items-center gap-6 p-2'>

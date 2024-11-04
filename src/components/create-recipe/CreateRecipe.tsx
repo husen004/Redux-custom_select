@@ -26,7 +26,7 @@ export default function CreateRecipe() {
          <form className="gap-4" onSubmit={handleSubmit}>
             <input type="text" placeholder="Recipe Name" value={recipe.name} onChange={e => setRecipe({...recipe, name: e.target.value})} className="input mr-2"/>
             <input type="text" placeholder="Recipe Image Address" value={recipe.image} onChange={e => setRecipe({...recipe, image: e.target.value})} className="input"/>
-            <button type="submit" className="border-2 rounded-2xl p-2 bg-green-300 border-green-400 mb-6 ml-2">Create Recipe</button>
+            <button type="submit" className="border-2 rounded-xl p-2 bg-green-300 border-green-400 mb-6 ml-2">Create Recipe</button>
          </form>
 
         </div>
