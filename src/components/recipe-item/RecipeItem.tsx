@@ -1,9 +1,14 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useAction } from '../../hooks/useAction';
+import { useTypedSelcetor } from '../../hooks/useTypedSelector';
+import { IRecipe } from '../../types/recipe.types';
 
+interface IRecipeItem {
+  recipe: IRecipe
+}
 
-function RecipeItem({recipe}) {
-  const { favorites } = useSelector(state => state)
+function RecipeItem({ recipe }: IRecipeItem ) {
+  const { favorites } = useTypedSelcetor(state => state)
 
   const {toggleFavorites} = useAction()
 
