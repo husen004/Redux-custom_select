@@ -11,8 +11,6 @@ import CreateRecipe from './components/create-recipe/CreateRecipe';
 function App() {
 
   const {isLoading, data} = useGetRecipesQuery();
-  
-  console.log(data)
 
   return (
     <>
@@ -40,7 +38,7 @@ function App() {
 
     </section>
 
-        </>
+    </>
   )
 }
 
